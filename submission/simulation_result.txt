@@ -1,0 +1,24 @@
+SCALA FUNCTIONAL SIMULATION RESULT
+===================================
+
+Command: sbt "runMain LightningCast --sim"
+
+[info] welcome to sbt 1.8.2 (Ubuntu Java 11.0.27)
+[info] loading project definition from /home/ubuntu/lightningcast-spatial/project
+[info] loading settings for project lightningcast-spatial from build.sbt ...
+[info] set current project to lab1 (in build file:/home/ubuntu/lightningcast-spatial/)
+[info] running LightningCast --sim
+[warn] No target specified. Specify target using: --fpga <device> or
+[warn] override val target = <device>
+[warn] Defaulting to 'Default' device.
+[info] Compiling LightningCast to /home/ubuntu/lightningcast-spatial/gen/LightningCast/
+[info] Compiling with arguments: --sim
+[info] emptiness (/home/ubuntu/bin/emptiness): Installed Version = 1.2, Required Version = 1.2
+[info] Banking summary report written to /home/ubuntu/lightningcast-spatial/gen/LightningCast//banking//decisions_23.html
+[info] Completed
+[success] Total time: 3.7730 seconds
+
+SIMULATION EXECUTION:
+[info] running Main 
+Conv2D complete! Output size: x73
+[success] Total time: 80 s (01:20), completed May 19, 2026, 8:08:32 PM
