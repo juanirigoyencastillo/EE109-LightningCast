@@ -1,0 +1,16 @@
+# Generated simulation files (too large for GitHub)
+gen/
+
+# Build artifacts
+target/
+project/target/
+project/project/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp

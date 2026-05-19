@@ -1,0 +1,1975 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head><body>
+
+    <div data-role="main" class="ui-content" style="overflow-x:scroll;">
+      <h2>Banking Decisions for LightningCast</h2>
+      <TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+  
+<TD><div data-role="collapsible"><h4> Sorted by estimated area </h4>
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> result (SRAM3 x381): Cost 14788.77 (230ms [27.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x381: LightningCast.scala:14:25 <font color="grey">-     val output = SRAM[T](H, W, OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 14788.769778853264</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</font>
+<br><font size=4>Found 16 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15523.79%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>201.44</b> FFs <b>12.57</b> BRAMs <b>15309.78</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15523.79%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>201.44</b> FFs <b>12.57</b> BRAMs <b>15309.78</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 17783.39%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>230.77</b> FFs <b>14.40</b> BRAMs <b>17538.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 17783.39%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>230.77</b> FFs <b>14.40</b> BRAMs <b>17538.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 16702.26%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>216.74</b> FFs <b>13.52</b> BRAMs <b>16472.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 16702.26%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>216.74</b> FFs <b>13.52</b> BRAMs <b>16472.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> padded (SRAM3 x382): Cost 3959.93 (139ms [16.3%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x382: LightningCast.scala:18:25 <font color="grey">-     val padded = SRAM[T](H + 2, W + 2, IC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 3959.9256474519634</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 10 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4457.45%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (80 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>57.84</b> FFs <b>3.61</b> BRAMs <b>4396.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 3959.93%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.39</b> FFs <b>3.21</b> BRAMs <b>3905.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 5771.57%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (80 solutions, 1 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">6</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>74.89</b> FFs <b>4.67</b> BRAMs <b>5692.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15720.73%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15720.73%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4251.95%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>55.18</b> FFs <b>3.44</b> BRAMs <b>4193.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4717.03%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (60 solutions, 1 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks))
+<br><br>Aux Nodes: FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>61.21</b> FFs <b>3.82</b> BRAMs <b>4652.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> input_sram (SRAM3 x279): Cost 3691.78 (3ms [0.4%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x279: LightningCast.scala:59:31 <font color="grey">-       val input_sram = SRAM[T](H, W, IC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 3691.7845571783864</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 3691.78%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>47.91</b> FFs <b>2.99</b> BRAMs <b>3640.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> weight_sram (SRAM4 x280): Cost 141.96 (365ms [42.8%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x280: LightningCast.scala:60:32 <font color="grey">-       val weight_sram = SRAM[T](3, 3, IC, OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(4), Hierarchical(4,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(3)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(0, 3)), RegroupDims(List(1, 2)), RegroupDims(List(1, 3)), RegroupDims(List(2, 3)), RegroupDims(List(0, 1, 2)), RegroupDims(List(0, 1, 3)), RegroupDims(List(0, 2, 3)), RegroupDims(List(1, 2, 3)), RegroupDims(List(0, 1, 2, 3)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 141.95704779189353</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</font>
+<br><font size=4>Found 10 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 223.08%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks), Dims {3}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.89</b> FFs <b>0.18</b> BRAMs <b>220.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,2,1>, P=<1,1,1,4> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,2,1>, P=<1,1,2,2> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,1,2>, P=<1,1,2,2> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 141.96%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks), Dims {3}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.84</b> FFs <b>0.11</b> BRAMs <b>140.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 141.96%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks), Dims {3}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.84</b> FFs <b>0.11</b> BRAMs <b>140.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 223.08%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks), Dims {3}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.89</b> FFs <b>0.18</b> BRAMs <b>220.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,1,2>, P=<1,1,4,1> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 535.38%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2, 3))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 535.38%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2, 3))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> bias_sram (SRAM1 x281): Cost 7.21 (14ms [1.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x281: LightningCast.scala:61:30 <font color="grey">-       val bias_sram = SRAM[T](OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 7.210516713239036</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List(0))),0)</font>
+<br><font size=4>Found 3 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 109.96%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">4</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.43</b> FFs <b>0.09</b> BRAMs <b>108.44</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 7.21%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List(0))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>2 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.05</b> FFs <b>0.00</b> BRAMs <b>3.56</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.05</b> FFs <b>0.00</b> BRAMs <b>3.56</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 9.01%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">4</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.12</b> FFs <b>0.01</b> BRAMs <b>8.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> acc (Reg x397): Cost 0.68 (22ms [2.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x397: LightningCast.scala:26:32 <font color="grey">-         val acc = Reduce(Reg[T](0))(0 until K, 0 until K, 0 until IC par 2) { </font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+<br><br><font size = "4">Instance 1, Partial Cost: 0.45065729457743975</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.45%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.01</b> FFs <b>0.00</b> BRAMs <b>0.44</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x315): Cost 0.23 (0ms [0.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x315: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x368): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x368: LightningCast.scala:65:17 <font color="grey">-       bias_sram load bias_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x314): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x314: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x313): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x313: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x339): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x339: LightningCast.scala:64:19 <font color="grey">-       weight_sram load weight_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x284): Cost 0.23 (2ms [0.2%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x284: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x421): Cost 0.23 (65ms [7.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x421: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (FIFO x283): Cost 0.00 (5ms [0.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x283: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.0</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: </font>
+<br><font size=4>Found 0 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x338): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x338: LightningCast.scala:64:19 <font color="grey">-       weight_sram load weight_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x282): Cost 0.00 (0ms [0.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x282: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x367): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x367: LightningCast.scala:65:17 <font color="grey">-       bias_sram load bias_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x419): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x419: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x420): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x420: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+</div></TD>
+<TD><div data-role="collapsible"><h4> Sorted by total search time (total time = 853ms) </h4>
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> weight_sram (SRAM4 x280): Cost 141.96 (365ms [42.8%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x280: LightningCast.scala:60:32 <font color="grey">-       val weight_sram = SRAM[T](3, 3, IC, OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(4), Hierarchical(4,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(3)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(0, 3)), RegroupDims(List(1, 2)), RegroupDims(List(1, 3)), RegroupDims(List(2, 3)), RegroupDims(List(0, 1, 2)), RegroupDims(List(0, 1, 3)), RegroupDims(List(0, 2, 3)), RegroupDims(List(1, 2, 3)), RegroupDims(List(0, 1, 2, 3)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 141.95704779189353</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</font>
+<br><font size=4>Found 10 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 223.08%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks), Dims {3}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.89</b> FFs <b>0.18</b> BRAMs <b>220.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,2,1>, P=<1,1,1,4> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,2,1>, P=<1,1,2,2> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,1,2>, P=<1,1,2,2> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 141.96%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks), Dims {3}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.84</b> FFs <b>0.11</b> BRAMs <b>140.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 141.96%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks), Dims {3}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.84</b> FFs <b>0.11</b> BRAMs <b>140.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 223.08%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks), Dims {3}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.89</b> FFs <b>0.18</b> BRAMs <b>220.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 163.59%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=4, B=1, alpha=<0,0,1,2>, P=<1,1,4,1> (22308 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>2.12</b> FFs <b>0.13</b> BRAMs <b>161.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 535.38%: (BankingOptions(Flat(4),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2, 3))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2,3}: Cyclic: N=1, B=1, alpha=<1,1,1,1>, P=<1,1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 535.38%: (BankingOptions(Hierarchical(4,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2, 3))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {3}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.74</b> FFs <b>0.11</b> BRAMs <b>132.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> result (SRAM3 x381): Cost 14788.77 (230ms [27.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x381: LightningCast.scala:14:25 <font color="grey">-     val output = SRAM[T](H, W, OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 14788.769778853264</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</font>
+<br><font size=4>Found 16 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15523.79%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>201.44</b> FFs <b>12.57</b> BRAMs <b>15309.78</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15523.79%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>201.44</b> FFs <b>12.57</b> BRAMs <b>15309.78</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 17783.39%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>230.77</b> FFs <b>14.40</b> BRAMs <b>17538.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 17783.39%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (60 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">4</div> </div>
+<br>Breakdown: Mem = LUTs <b>230.77</b> FFs <b>14.40</b> BRAMs <b>17538.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14788.77%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None)
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>191.91</b> FFs <b>11.97</b> BRAMs <b>14584.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (4848 solutions, 6 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 16702.26%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>216.74</b> FFs <b>13.52</b> BRAMs <b>16472.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 14875.30%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (4848 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>193.03</b> FFs <b>12.04</b> BRAMs <b>14670.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 16702.26%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (45 solutions, 1 checks), Dims {2}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>216.74</b> FFs <b>13.52</b> BRAMs <b>16472.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> padded (SRAM3 x382): Cost 3959.93 (139ms [16.3%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x382: LightningCast.scala:18:25 <font color="grey">-     val padded = SRAM[T](H + 2, W + 2, IC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 3959.9256474519634</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 10 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4457.45%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (80 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>57.84</b> FFs <b>3.61</b> BRAMs <b>4396.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),2)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,1,4> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,2,1>, P=<1,2,2> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 3959.93%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (60 solutions, 1 checks), Dims {2}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (6 solutions, 1 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.39</b> FFs <b>3.21</b> BRAMs <b>3905.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 5771.57%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),3)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (80 solutions, 1 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">6</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>74.89</b> FFs <b>4.67</b> BRAMs <b>5692.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15720.73%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {2}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 15720.73%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List(0, 1, 2))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>4 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>51.00</b> FFs <b>3.18</b> BRAMs <b>3876.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4251.95%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,4,1> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>55.18</b> FFs <b>3.44</b> BRAMs <b>4193.33</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4132.98%: (BankingOptions(Flat(3),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=4, B=1, alpha=<0,1,2>, P=<1,2,2> (8282 solutions, 7 checks))
+<br><br>Aux Nodes: FixAdd(None,Some(0)),FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">4</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>53.63</b> FFs <b>3.35</b> BRAMs <b>4076.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 4717.03%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks), Dims {1}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (60 solutions, 1 checks), Dims {2}: Cyclic: N=4, B=1, alpha=<1>, P=<4> (10 solutions, 1 checks))
+<br><br>Aux Nodes: FixAdd(None,None),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">8</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>61.21</b> FFs <b>3.82</b> BRAMs <b>4652.00</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x421): Cost 0.23 (65ms [7.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x421: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> acc (Reg x397): Cost 0.68 (22ms [2.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x397: LightningCast.scala:26:32 <font color="grey">-         val acc = Reduce(Reg[T](0))(0 until K, 0 until K, 0 until IC par 2) { </font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+<br><br><font size = "4">Instance 1, Partial Cost: 0.45065729457743975</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.45%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.01</b> FFs <b>0.00</b> BRAMs <b>0.44</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> bias_sram (SRAM1 x281): Cost 7.21 (14ms [1.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x281: LightningCast.scala:61:30 <font color="grey">-       val bias_sram = SRAM[T](OC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 7.210516713239036</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List(0))),0)</font>
+<br><font size=4>Found 3 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 109.96%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),1)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=3, B=1, alpha=<1>, P=<3> (32 solutions, 1 checks))
+<br><br>Aux Nodes: FixMod(None,Some(3)),FixAdd(None,Some(1))
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">3</div> <div style="border: 1px solid;padding: 5px">4</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>1.43</b> FFs <b>0.09</b> BRAMs <b>108.44</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 7.21%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List(0))),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>2 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.05</b> FFs <b>0.00</b> BRAMs <b>3.56</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">2</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.05</b> FFs <b>0.00</b> BRAMs <b>3.56</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 9.01%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=2, B=1, alpha=<1>, P=<2> (24 solutions, 1 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">4</div><div style="border: 1px solid;padding: 5px">0</div> <div style="border: 1px solid;padding: 5px">2</div> <div style="border: 1px solid;padding: 5px">0</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.12</b> FFs <b>0.01</b> BRAMs <b>8.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (FIFO x283): Cost 0.00 (5ms [0.6%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x283: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.0</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: </font>
+<br><font size=4>Found 0 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> input_sram (SRAM3 x279): Cost 3691.78 (3ms [0.4%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x279: LightningCast.scala:59:31 <font color="grey">-       val input_sram = SRAM[T](H, W, IC)</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(3), Hierarchical(3,None))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()), RegroupDims(List(0)), RegroupDims(List(1)), RegroupDims(List(2)), RegroupDims(List(0, 1)), RegroupDims(List(0, 2)), RegroupDims(List(1, 2)), RegroupDims(List(0, 1, 2)))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 3691.7845571783864</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 3691.78%: (BankingOptions(Hierarchical(3,None),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0,1,2}: Cyclic: N=1, B=1, alpha=<1,1,1>, P=<1,1,1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>47.91</b> FFs <b>2.99</b> BRAMs <b>3640.89</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x284): Cost 0.23 (2ms [0.2%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x284: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x368): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x368: LightningCast.scala:65:17 <font color="grey">-       bias_sram load bias_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x314): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x314: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x338): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x338: LightningCast.scala:64:19 <font color="grey">-       weight_sram load weight_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x367): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x367: LightningCast.scala:65:17 <font color="grey">-       bias_sram load bias_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x419): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x419: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x313): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x313: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamIn x339): Cost 0.23 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x339: LightningCast.scala:64:19 <font color="grey">-       weight_sram load weight_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Flat(1),NBestGuess,AlphaBestGuess,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {0}: Cyclic: N=1, B=1, alpha=<1>, P=<1> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">0</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x420): Cost 0.00 (1ms [0.1%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x420: LightningCast.scala:69:19 <font color="grey">-       output_dram store result</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (Reg x315): Cost 0.23 (0ms [0.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x315: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Hierarchical(0,None))</font>
+<br><font size = "2">NStrictness:   List(NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+<br><br><font size = "4">Instance 0, Partial Cost: 0.22532864728871987</font> 
+<div data-role="collapsible"><h5> </h5><div style="background-color=#BECBFE"> 
+<br><font size = "2">Winning scheme: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</font>
+<br><font size=4>Found 1 Alternative Schemes</font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>
+<p><div style="padding: 10px; border: 1px;display:inline-block;background-color: #ccc">
+<br><font size = "3"><b>scheme cost 0.23%: (BankingOptions(Hierarchical(0,None),NRelaxed,AlphaRelaxed,RegroupDims(List())),0)</b></font>
+<div data-role="collapsible"><h5> </h5><div style="background-color=#d0b4b4"> 
+<br>1 duplicates
+<br>Banking Decision: List(Dims {}: Cyclic: N=1, B=1, alpha=<>, P=<> (1 solutions, 0 checks))
+<br><br>Aux Nodes: 
+<br><div style="display:grid;grid-template-columns: max-content max-content max-content"><div style="border: 1px solid;padding: 5px"><b>muxwidth</b></div> <div style="border: 1px solid;padding: 5px"><b># R lanes</b></div><div style="border: 1px solid;padding: 5px"><b># W Lanes</b></div> <div style="border: 1px solid;padding: 5px">1</div> <div style="border: 1px solid;padding: 5px">1</div><div style="border: 1px solid;padding: 5px">1</div> </div>
+<br>Breakdown: Mem = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.22</b>, Aux Nodes = LUTs <b>0.00</b> FFs <b>0.00</b> BRAMs <b>0.00</b>
+</div></div>
+</div></p>
+</div></div>
+</div>
+</div></div>
+</TABLE></div></td></TABLE>
+<br>
+
+
+<TABLE BORDER="1" CELLPADDING="1" CELLSPACING="0"><td>
+<h3> . (StreamOut x282): Cost 0.00 (0ms [0.0%])</h3>
+<div data-role="collapsible"><h4> </h4>
+<TABLE BORDER="3" CELLPADDING="10" CELLSPACING="10">
+<br><font size = "2">Sym x282: LightningCast.scala:63:18 <font color="grey">-       input_sram load input_dram</font></font>
+<br><br><font size = "2">Effort:    1</font>
+<br><font size = "2">BankingViews:   List(Flat(1))</font>
+<br><font size = "2">NStrictness:   List(NBestGuess, NRelaxed)</font>
+<br><font size = "2">AlphaStrictness:   List(AlphaBestGuess, AlphaRelaxed)</font>
+<br><font size = "2">DimensionDuplication: List(RegroupDims(List()))</font>
+</TABLE></div></td></TABLE>
+<br>
+
+</div></TD>
+</TABLE>
+</body>
+</html>
